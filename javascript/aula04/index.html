@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula04t</title>
+</head>
+<body>
+    <script>
+        window.alert('Olá, mundo')
+        var nome = window.prompt('Qual seu nome?')
+        window.confirm('seu nome é: ' + nome)
+
+        /* 
+        Number(n) comando usado para indicar que a variavel é um numero.
+        Number.parseInt(n) pode ser utilizado para numeros inteiros e Number.parseFloat(n)
+        para numeros reais     
+        */
+
+        var x1 = Number(window.prompt('Digite um numero:'))
+        var x2 = Number(window.prompt('Digite outro numero: '))
+        var soma = x1+x2
+        window.confirm('A soma dos números é: ' + soma)
+
+        /* 
+        Também é possivel transformar a variavel em uma string os comandos são:
+        (n)toString ou String(n)
+        Em string o operador "+" faz a concatenação das strings, porém utilizando template string pode ser mais prático.
+        `templateString se usa assim ${n}` é obrigatório o uso de craze nesse caso.
+        */
+
+        window.confirm(`A soma dos números agora em template string é ${soma}`)
+
+        /*
+        s.length conta quantos caracteres tem a string
+        s.toUpperCase deixa toda a string em maiusculo 
+        s.toLowerCase deixca toda a string em minusculo
+        */
+        soma += 3
+        window.alert('Nova soma usando "+=" 3: ' + soma)
+
+        /*
+        Operadores lógicos 
+        ! == Negação
+        && ==  conjunção
+        || == disjunção (ou)
+        */
+
+        /*
+        Operador ternario ( ? e :)
+        teste?true:false 
+
+                
+    </script>
+</body>
+</html>
